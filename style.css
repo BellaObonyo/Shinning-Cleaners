@@ -71,6 +71,203 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* for my code */
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .custom-header {
+    background-color: #f5f9ff; /* Light background */
+    padding: 20px 0;
+  }
+  
+  .custom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* For responsive behavior */
+  }
+  
+  .custom-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .custom-logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .custom-logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002d62; /* Blue logo text */
+  }
+  
+  .custom-contact-details {
+    display: flex;
+    gap: 30px; /* Spacing between each contact item */
+  }
+  
+  .custom-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .custom-contact-item i {
+    color: #007bff; /* Icon color */
+    font-size: 20px; /* Icon size */
+  }
+  
+  .custom-contact-item strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .custom-contact-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666; /* Secondary text color */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .custom-header-row {
+      flex-direction: column; /* Stack logo and contact details vertically */
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .custom-contact-details {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f9ff; /* Matches the background color in the image */
+  }
+  
+  /* Header styles */
+  .header-top {
+    background-color: #f5f9ff; /* Light background for header */
+    padding: 10px 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between; /* Align items to opposite sides */
+    align-items: center; /* Vertically align items */
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    gap: 8px; /* Spacing between icon and text */
+  }
+  
+  .header-top-left i,
+  .header-top-right i {
+    color: #007bff; /* Blue color for icons */
+    font-size: 18px; /* Icon size */
+  }
+  
+  .header-top-left span,
+  .header-top-right span {
+    font-size: 16px; /* Text size */
+    color: #333; /* Darker text color for readability */
+  }
+  
+  .header-top-right {
+    text-align: right; /* Right-align the working hours text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      gap: 15px; /* Add spacing between stacked items */
+      text-align: center; /* Center align the text */
+    }
+  }
+
+  /* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f9ff; /* Matches the background color in the image */
+  }
+  
+  /* Header styles */
+  .header-top {
+    background-color: #d0dbf8;
+    /* background-color: #f5f9ff;  */
+    padding: 10px 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between; /* Align items to opposite sides */
+    align-items: center; /* Vertically align items */
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    gap: 8px; /* Spacing between icon and text */
+  }
+  
+  .header-top-left i,
+  .header-top-right i {
+    color: #007bff; /* Blue color for icons */
+    font-size: 18px; /* Icon size */
+  }
+  
+  .header-top-left span,
+  .header-top-right span {
+    font-size: 16px; /* Text size */
+    color: #333; /* Darker text color for readability */
+  }
+  
+  .header-top-right {
+    text-align: right; /* Right-align the working hours text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      gap: 15px; /* Add spacing between stacked items */
+      text-align: center; /* Center align the text */
+    }
+  }
+  
 
 /* Smooth Scroll */
 html{
