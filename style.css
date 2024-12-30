@@ -183,7 +183,8 @@ html{
 /* Bottom Navbar */
 .showcase .navbar-bottom{
     width: 100%;
-    background: #cfcfcf;
+    background-color: #007cfb;
+    /* background: #cfcfcf; */
     padding: 25px 95px;
     align-items: center;
     margin:  auto;
@@ -201,7 +202,8 @@ html{
     z-index: 999;
 }
 .showcase .navbar-bottom .brand-left{
-    color: #55BA53;
+    /* color: #55BA53; */
+    color: black;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -222,12 +224,14 @@ html{
 }
 .showcase .navbar-bottom.sticky .menu-right li:last-child{
     display: none;
+    
 }
 .showcase .navbar-bottom .menu-right a{
     text-decoration: none;
     display: inline-block;
+    color: white;
     padding: 0 20px;
-    color: #1A1B1E;
+    /* color: #1A1B1E; */
     transition: all 0.5s ease;
 }
 .showcase .navbar-bottom .menu-right a:hover{
