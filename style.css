@@ -71,16 +71,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* for my code */
-
-/* General Reset */
+/* Contact and location details section */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
   
   .custom-header {
-    background-color: #f5f9ff; /* Light background */
+    background-color: #f5f9ff; 
     padding: 20px 0;
   }
   
@@ -95,7 +93,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* For responsive behavior */
+    flex-wrap: wrap; 
   }
   
   .custom-logo {
@@ -112,23 +110,23 @@ body {
   .custom-logo span {
     font-size: 24px;
     font-weight: bold;
-    color: #002d62; /* Blue logo text */
+    color: #002d62; 
   }
   
   .custom-contact-details {
     display: flex;
-    gap: 30px; /* Spacing between each contact item */
+    gap: 30px; 
   }
   
   .custom-contact-item {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px; 
   }
   
   .custom-contact-item i {
-    color: #007bff; /* Icon color */
-    font-size: 20px; /* Icon size */
+    color: #007bff; 
+    font-size: 20px; 
   }
   
   .custom-contact-item strong {
@@ -139,7 +137,7 @@ body {
   .custom-contact-item p {
     margin: 0;
     font-size: 14px;
-    color: #666; /* Secondary text color */
+    color: #666; 
   }
   
   /* Responsive Design */
@@ -163,7 +161,7 @@ body {
   
   /* Navbar Styles */
   .navbar {
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff;
     display: flex;
     justify-content: center;
     padding: 10px 20px;
@@ -197,10 +195,10 @@ body {
   }
   
   .nav-links li a:hover {
-    border-bottom: 2px solid #00ff00; /* Green underline */
+    border-bottom: 2px solid #82cc09; 
   }
   
-  /* Menubar Actions */
+  /* Navbar  Actions */
   .nav-actions {
     display: flex;
     align-items: center;
