@@ -379,11 +379,13 @@ body {
   .btn-secondary:hover {
     background-color: #0056d2;
   }
+
   
   /* Background Image */
   .background-image {
     flex: 1;
-    /* background-image: url('images/bucket.png');  */
+    background: url('./images/clean.jpg') no-repeat center center/cover;
+    background-color: #f5f9ff;
     background-size: cover; 
     background-position: center;
     height: 100%; 
@@ -578,15 +580,7 @@ html{
     transition: all 0.5s ease;
 }
 
-
-/* Showcase Area Styling */
-.showcase{
-    background-color: #f5f9ff;
-    background: url('./images/bucket.png') no-repeat center center/cover;
-}
-
 /* Top Navbar */
-
 .showcase .navbar-top{
     width: 100%;
     display: flex;
@@ -626,58 +620,6 @@ html{
     padding: 5px 15px;
     text-decoration: none;
     color: #95A2BB;
-    transition: all 0.5s ease;
-}
-.showcase .right li a:hover{
-    color: #55BA53;
-}
-
-/* Bottom Navbar */
-.showcase .navbar-bottom{
-    width: 100%;
-    background-color: #007cfb;
-    padding: 25px 95px;
-    align-items: center;
-    margin:  auto;
-    display: flex;
-    position: fixed; 
-    justify-content: space-between;
-    overflow: hidden;
-}
-.navbar-bottom.sticky{
-    padding: 15px 95px;
-    background-color: #007cfb;
-    top: 0;
-    z-index: 999;
-}
-.showcase .navbar-bottom .brand-left{
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-.showcase .navbar-bottom.sticky .brand-left{
-    color: #0A2940;
-}
-.showcase .navbar-bottom .brand-left:hover{
-    color: #0A2940;
-  
-}
-.showcase .navbar-bottom .menu-right{
-    display: flex;
-    list-style: none;
-    font-size: 14px;
-    font-weight: 600;
-}
-.showcase .navbar-bottom.sticky .menu-right li:last-child{
-    display: none;
-    
-}
-.showcase .navbar-bottom .menu-right a{
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    padding: 0 20px;
     transition: all 0.5s ease;
 }
 
