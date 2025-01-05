@@ -42,7 +42,6 @@
 }
 
 
-
 /* Scroll-Up Button Styling */
 .scroll-up-btn {
     position: fixed;
@@ -129,6 +128,19 @@ body {
     align-items: center;
     flex-wrap: wrap; 
     gap: 20px; 
+}
+
+
+.custom-contact-item i,
+.custom-contact-item strong,
+.custom-contact-item p {
+    transition: color 0.3s ease; 
+}
+
+.custom-contact-item i:hover,
+.custom-contact-item strong:hover,
+.custom-contact-item p:hover {
+    color: #007bff; 
 }
 
 /* For contact details section */
@@ -264,11 +276,11 @@ body {
   }
   
 
-  .search-btn {
+  #search-btn{
     color: white; 
     font-size: 1.5rem;
     cursor: pointer;
- 
+
   }
 
   
@@ -403,6 +415,7 @@ body {
       font-size: 0.9rem;
     }
   }
+
 
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -583,16 +596,23 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+
+  .section-title .highlight {
+    font-weight: bold; 
+    color:  #0056f4; 
+  }
+
+
   .section-title {
     font-size: 36px;
     color: #14212b;
     font-weight: bold;
     line-height: 1.5;
-  }
-  
-  .section-title span {
-    color: #0056f4;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
   
   /* Decoration Styling */
