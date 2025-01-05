@@ -149,7 +149,7 @@ body {
     color: #002d62; 
   }
   
-  .custom-contact-details {
+  /* .custom-contact-details {
     display: flex;
     gap: 30px; 
   }
@@ -174,10 +174,61 @@ body {
     margin: 0;
     font-size: 14px;
     color: #666; 
-  }
+  } */
+
+
+  .custom-contact-details {
+    display: flex;
+    justify-content: space-between; /* Ensures equal space between items */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 30px; /* Space between each contact item */
+    flex: 1; /* Allows contact details to take up remaining space */
+}
+
+.custom-contact-item {
+    display: flex;
+    align-items: flex-start; /* Align icon and text properly */
+    gap: 10px; /* Space between the icon and text */
+    flex: 1; /* Ensures each item occupies equal width */
+}
+
+.custom-contact-item div {
+    max-width: 300px; /* Prevents text from wrapping too close */
+}
+
+.custom-contact-item i {
+    color: #007bff; 
+    font-size: 24px; /* Larger icon size for better readability */
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+.custom-contact-item strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.custom-contact-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4; /* Adds spacing between lines */
+}
+
+/* Responsive Design for Contact Details */
+@media (max-width: 768px) {
+    .custom-contact-details {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Increased spacing between stacked items */
+    }
+
+    .custom-contact-item {
+        flex: unset; /* Remove equal spacing for stacked layout */
+    }
+}
+
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .custom-header-row {
       flex-direction: column; 
       text-align: center;
@@ -188,7 +239,7 @@ body {
       flex-direction: column;
       gap: 15px;
     }
-  }
+  } */
 
   .menu-bar {
     margin: 0;
