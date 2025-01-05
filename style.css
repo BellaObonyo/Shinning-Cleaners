@@ -107,80 +107,56 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Contact and location details section */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .custom-header {
+}
+
+.custom-header {
     background-color: #f5f9ff; 
     padding: 20px 0;
-  }
-  
-  .custom-container {
+}
+
+.custom-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-  }
-  
-  .custom-header-row {
+    gap: 30px; /* Added spacing between logo and contact details */
+}
+
+.custom-header-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; 
-  }
-  
-  .custom-logo {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Add spacing between child elements */
+}
+
+.custom-logo {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .custom-logo img {
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.custom-logo img {
     width: 50px;
     height: auto;
-  }
-  
-  .custom-logo span {
+}
+
+.custom-logo span {
     font-size: 24px;
     font-weight: bold;
     color: #002d62; 
-  }
-  
-  /* .custom-contact-details {
-    display: flex;
-    gap: 30px; 
-  }
-  
-  .custom-contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-  }
-  
-  .custom-contact-item i {
-    color: #007bff; 
-    font-size: 20px; 
-  }
-  
-  .custom-contact-item strong {
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .custom-contact-item p {
-    margin: 0;
-    font-size: 14px;
-    color: #666; 
-  } */
+    margin-right: 20px; /* Add margin to create separation */
+}
 
-
-  .custom-contact-details {
+.custom-contact-details {
     display: flex;
-    justify-content: space-between; /* Ensures equal space between items */
-    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between; /* Ensure equal space between items */
+    align-items: flex-start; /* Align items to the top */
     gap: 30px; /* Space between each contact item */
     flex: 1; /* Allows contact details to take up remaining space */
 }
@@ -214,33 +190,30 @@ body {
     line-height: 1.4; /* Adds spacing between lines */
 }
 
-/* Responsive Design for Contact Details */
+/* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    .custom-contact-details {
+    .custom-header-row {
         flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align stacked items to the left */
         gap: 20px; /* Increased spacing between stacked items */
     }
 
+    .custom-contact-details {
+        flex-direction: column; /* Stack contact items vertically */
+        gap: 20px; /* Spacing between stacked contact items */
+    }
+
+    .custom-logo,
     .custom-contact-item {
-        flex: unset; /* Remove equal spacing for stacked layout */
+        width: 100%; /* Ensure full width for stacked layout */
+    }
+
+    .custom-logo span {
+        margin-right: 0;
     }
 }
 
-  
-  /* Responsive Design */
-  /* @media (max-width: 768px) {
-    .custom-header-row {
-      flex-direction: column; 
-      text-align: center;
-      gap: 20px;
-    }
-  
-    .custom-contact-details {
-      flex-direction: column;
-      gap: 15px;
-    }
-  } */
-
+ 
   .menu-bar {
     margin: 0;
     font-family: Arial, sans-serif;
