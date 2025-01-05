@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 
-
 /* For screens up to 768px wide (typical tablets) */
 @media (max-width: 768px) {
     .wrapper {
@@ -123,22 +122,23 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 30px; /* Added spacing between logo and contact details */
+    gap: 30px; 
 }
 
 .custom-header-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    gap: 20px; /* Add spacing between child elements */
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
+/* For contact details section */
 .custom-logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0; 
 }
 
 .custom-logo img {
@@ -150,32 +150,32 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #002d62; 
-    margin-right: 20px; /* Add margin to create separation */
+    margin-right: 20px; 
 }
 
 .custom-contact-details {
     display: flex;
-    justify-content: space-between; /* Ensure equal space between items */
-    align-items: flex-start; /* Align items to the top */
-    gap: 30px; /* Space between each contact item */
-    flex: 1; /* Allows contact details to take up remaining space */
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 30px; 
+    flex: 1; 
 }
 
 .custom-contact-item {
     display: flex;
-    align-items: flex-start; /* Align icon and text properly */
-    gap: 10px; /* Space between the icon and text */
-    flex: 1; /* Ensures each item occupies equal width */
+    align-items: flex-start; 
+    gap: 10px; 
+    flex: 1; 
 }
 
 .custom-contact-item div {
-    max-width: 300px; /* Prevents text from wrapping too close */
+    max-width: 300px;
 }
 
 .custom-contact-item i {
     color: #007bff; 
-    font-size: 24px; /* Larger icon size for better readability */
-    flex-shrink: 0; /* Prevents the icon from shrinking */
+    font-size: 24px; 
+    flex-shrink: 0; 
 }
 
 .custom-contact-item strong {
@@ -187,25 +187,25 @@ body {
     margin: 0;
     font-size: 14px;
     color: #666;
-    line-height: 1.4; /* Adds spacing between lines */
+    line-height: 1.4; 
 }
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
     .custom-header-row {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align stacked items to the left */
-        gap: 20px; /* Increased spacing between stacked items */
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 20px; 
     }
 
     .custom-contact-details {
-        flex-direction: column; /* Stack contact items vertically */
-        gap: 20px; /* Spacing between stacked contact items */
+        flex-direction: column; 
+        gap: 20px; 
     }
 
     .custom-logo,
     .custom-contact-item {
-        width: 100%; /* Ensure full width for stacked layout */
+        width: 100%; 
     }
 
     .custom-logo span {
@@ -219,7 +219,7 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  /* Navbar Styles */
+  /* Navbar  section Styles */
   .navbar {
     background-color: #007bff;
     display: flex;
@@ -483,27 +483,7 @@ body {
   }
   
 
-/* Smooth Scroll */
-html{
-    scroll-behavior: smooth;
-}
-
-/* Utility Classes */
-.text-secondary{
-    color: #55BA53;
-}
-.text-center{
-    text-align: center;
-}
-.bg-light{
-    background: #cfcfcf;
-}
-.bg-secondary{
-    background: #55BA53;
-}
-
-
-/* About Us Section */
+  /* About Us Section */
 .about-us-section {
     display: flex;
     justify-content: center;
@@ -586,6 +566,101 @@ html{
   }
   
 
+  /* Our Services Section */
+.our-services-section {
+    padding: 4rem 2rem;
+    background-color: #f9fafe;
+    text-align: center;
+  }
+  
+  .our-services-section .section-title {
+    color: #27ae60;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .our-services-section .services-heading {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .service-card .service-icon {
+    font-size: 2rem;
+    color: #007cfb;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card .service-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card .service-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .service-card:hover {
+    background-color: #007cfb;
+    color: #fff;
+  }
+  
+  .service-card:hover .service-icon {
+    color: #fff;
+  }
+  
+  .service-card.active {
+    background-color: #007cfb;
+    color: #fff;
+  }
+  
+  .service-card.active .service-icon {
+    color: #fff;
+  }
+  
+
+/* Smooth Scroll */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Utility Classes */
+.text-secondary{
+    color: #55BA53;
+}
+.text-center{
+    text-align: center;
+}
+.bg-light{
+    background: #cfcfcf;
+}
+.bg-secondary{
+    background: #55BA53;
+}
+
+
+
+  
 .py-0{padding: 16px 0;}
 .py-1{padding: 24px 0;}
 .py-2{padding: 32px 0;}
