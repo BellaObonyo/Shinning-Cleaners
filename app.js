@@ -7,6 +7,13 @@ window.onscroll = () =>{
     searchForm.classList.remove('active');
 }
 
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling
+    });
+  }
+
 $(document).ready(function(){
 
     $(window).scroll(function(){

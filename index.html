@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -23,36 +24,38 @@
       </div>
 
       <!-- navbar -->
-      <nav class="bg-white shadow-sm">
+      <nav class="bg-white sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-4 py-4">
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img src="./Assets/logo.png" alt="Shinning Cleaners" class="h-8 w-8" />
               <span class="text-xl font-bold text-[#1e1b4b]">Shinning Cleaners</span>
             </div>
-  
-            <div class="hidden md:flex items-center space-x-8 justify-between ">
-                
-                    <a  class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900 mr-4">
-                      Home
-                    </a>
-                    <a class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900 mr-4">
-                      About Us
-                    </a>
-                    <a  class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900">
-                      Services
-                    </a>
-                    <a  class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900">
-                        Contact Us
-                      </a>
-                  </div>
-                  <div>
-        
-  
-            <Button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded">Get A Quote</Button>
+      
+            <div class="hidden md:flex items-center space-x-8 justify-between">
+              <a class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900 mr-4">
+                Home
+              </a>
+              <a class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900 mr-4">
+                About Us
+              </a>
+              <a class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900">
+                Services
+              </a>
+              <a class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-900">
+                Contact Us
+              </a>
+            </div>
+      
+            <div>
+              <button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded">
+                Get A Quote
+              </button>
+            </div>
           </div>
         </div>
       </nav>
+      
       <!-- hero section -->
     
       <div class="relative inset-0 bg-cover bg-center h-[70vh]" id="hero">
@@ -136,7 +139,7 @@
     <div class="container mx-auto px-4">
       <!-- Section Header -->
       <div class="text-center mb-12">
-        <div class="text-4xl text-green-500 font-bold mb-2">✨ Our Services</div>
+        <div class="text-green-500 font-medium mb-2 text-3xl">✨ Our Services</div>
         <h2 class="text-2xl font-bold">
           Providing the Best Services for Our 
           <span class="text-blue-600">Customers</span>
@@ -303,13 +306,13 @@
           <h3 class="text-lg font-bold mb-4">Follow Us</h3>
           <div class="flex space-x-4">
             <a href="#" class="hover:text-blue-400">
-              <i class="fab fa-facebook h-6 w-6"></i>
+              <i class="fab fa-facebook h-6 w-6 text-white"></i>
             </a>
             <a href="#" class="hover:text-blue-400">
-              <i class="fab fa-twitter h-6 w-6"></i>
+              <i class="fab fa-twitter h-6 w-6 text-white"></i>
             </a>
             <a href="#" class="hover:text-blue-400">
-              <i class="fab fa-instagram h-6 w-6"></i>
+              <i class="text-white fab fa-instagram h-6 w-6 text-white"></i>
             </a>
           </div>
         </div>
@@ -318,12 +321,12 @@
       <!-- Footer Bottom Section -->
       <div class="border-t border-gray-700 mt-8 pt-8 flex justify-between items-center">
         <p class="text-sm">Copyright © 2025 by shinningcleaners. All Rights Reserved.</p>
-        <button onclick="scrollToTop()" class="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors">
+        <button onclick="scrollToTop()" class="bg-blue-600 p-2 rounded-full hover:bg-blue-800 transition-colors scroll-btn">
           <i class="fas fa-arrow-up text-white"></i>
         </button>
       </div>
     </div>
   </footer>
-
+  <script src="./app.js"></script>
 </body>
 </html>

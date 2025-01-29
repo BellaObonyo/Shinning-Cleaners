@@ -2,5 +2,14 @@
   background-image: url("./Assets/windows.jpg");
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 100vh;
 }
+
+.scroll-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* test */
