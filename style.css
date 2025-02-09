@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #hero {
   background-image: url("./Assets/windows.jpg");
   background-size: cover;
