@@ -1,3 +1,11 @@
+// menu items
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
+
 // SearchForm Section code
 let searchForm = document.querySelector('.search-form');
 document.querySelector('#search-btn').onclick = () =>{
